@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/products.css">
+
+
+
+    <link rel="apple-touch-icon" sizes="114x114" href="${resource(dir: 'images', file: 
+'apple-touch-icon-retina.png')}">
+    <title>CHIAROSCURO</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.JPEG">
+</head>
+<body> 
+
+    <nav id="navbar" class="navbar">
+        <ul>
+            <li><i class="fa-solid fa-bars" id="menu_icon"></i></li>
+            <li><a href="women.html" class="nav-hid">Women</a></li>
+            <li><i class="fa-solid fa-magnifying-glass" id="search_icon"></i></li>
+            <li><a href="men.html" class="nav-hid">Men</a></li>
+        </ul>
+        <a href="index.html" class="brand">Chiaroscuro</a>
+        <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="no.html">Notification List</a></li>
+        </ul>
+    </nav>
+
+    <section class="videobg" id="video1">
+        <video src="assets/v2.mp4" type="video/mp4" autoplay loop muted plays-inline class="video" ></video>
+    </section>
+
+    <section class="services">
+        <h2>All Products</h2>
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="assets/v7.JPEG" alt="service img 1">
+                    <div class="card-content">
+                        <h1>Ballet</h1>
+                        <p>T-shirt</p>
+                        <button class="card-btn">See more</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="assets/v5.jpg" alt="service img 2">
+                    <div class="card-content">
+                        <h1>King</h1>
+                        <p>Menswear</p>
+                        <button class="card-btn">The best for Him</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="assets/v6.jpg" alt="service img 3">
+                    <div class="card-content">
+                        <h1>Prince And Princess</h1>
+                        <p>Kids Collection</p>
+                        <button class="card-btn">Disciples Collection</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-image" src="assets/v6.jpg" alt="service img 3">
+                    <div class="card-content">
+                        <h1>Prince And Princess</h1>
+                        <p>Kids Collection</p>
+                        <button class="card-btn">Disciples Collection</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    
+    <section class="links">
+        <hr class="hr">
+        <div class="container">
+            <div class="column">
+              <div class="cell cell-head">CONNECT</div>
+              <div class="cell"><a href="mailto:chiarodark@gmail.com" class="links">You can <span>email us</span>.</a></div>
+              <div class="cell"><a href="https://www.instagram.com/__chiaroscuro____/" class="links"><span>Instagram</span></a></div>
+              <div class="cell"><a href="index.html" class="links">Home</a></div>
+            </div>
+
+            <div class="column">
+              <div class="cell cell-head2">CONNECT</div>
+              <div class="cell"><a href="no.html" class="links"><span>Sign up</span> for first access to latest collections</a></div>
+            </div>
+    </section>
+
+    <hr class="hr">
+
+    <footer class="footer">
+        
+        <a href="#" class='language'><i class="fa-solid fa-globe globe-icon" ></i><span>ENGLISH (INTL)</span></a>
+        <ul>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Legal & privacy</a></li>
+            <li><a href="#">Cookies</a></li>
+        </ul>
+    </footer>
+
+    <div class="last-logo">Chiaroscuro</div>
+
+
+    
+
+    <div class="accordian-container">
+        <hr class="hr-hid">
+        <button class="accordion">Help</button>
+            <div class="panel">
+
+                <a href="#">You can <span>call</span> or <span>email us</span>.</a>
+
+            </div>
+        
+        <hr class="hr-hid">
+
+        <button class="accordion">Services</button>
+            <div class="panel">
+                <a href="#">Repairs</a>
+            </div>
+
+        <hr class="hr-hid">
+        
+
+
+        <hr class="hr-hid">
+        
+        <button class="accordion">Connect</button>
+            <div class="panel">
+                <a href="#"><span>Sign up</span> for first access to latest collections</a>
+                
+
+                <div class="socialmedia">
+
+                    <i class="fa-brands fa-instagram social insta"></i>
+
+                   <i class="fa-brands fa-facebook-f social"></i>
+
+                    <i class="fa-brands fa-twitter social"></i>
+
+                    <i class="fa-brands fa-youtube social"></i>
+
+                    <i class="fa-brands fa-snapchat social"></i>
+
+                    <i class="fa-brands fa-pinterest-p social pin"></i>
+
+                    <i class="fa-brands fa-foursquare social"></i>
+
+                </div>
+            </div>
+            <hr class="hr-hid">
+    </div>
+    
+
+    <footer class="mobile-footer">
+
+        <div class="contain"><a href="#" class='mobile-language'><i class="fa-solid fa-globe globe-icon" ></i><span>ENGLISH</span></a></div>
+        
+    </footer>
+
+
+
+
+
+    <script>
+        var lastScrollTop = 0;
+        navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            navbar.style.top = "-1px";
+        } else {
+            navbar.style.top = "0";
+            if (scrollTop === 0) {
+                navbar.classList.remove("scrolled"); 
+            } else {
+                navbar.classList.add("scrolled"); 
+                }
+            }
+        lastScrollTop = scrollTop;
+        }
+        );
+
+
+
+//Accordian
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                var panel = this.nextElementSibling;
+                var isActive = this.classList.contains("active");
+
+                // Close all accordion panels
+
+                for (var j = 0; j < acc.length; j++) {
+                    var otherPanel = acc[j].nextElementSibling;
+                    if (otherPanel !== panel) {
+                        otherPanel.style.maxHeight = null;
+                        acc[j].classList.remove("active");
+                    }
+                }
+
+                if (isActive) {
+                    this.classList.remove("active");
+                    panel.style.maxHeight = null;
+                } else {
+                    this.classList.add("active");
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                }
+            );
+        }
+
+
+    </script>
+</body>
+</html>
